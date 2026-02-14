@@ -27,7 +27,7 @@ import MoodSelector from './components/features/MoodSelector';
 import { FaHeart, FaBolt, FaStar, FaInfinity, FaArrowDown, FaEnvelopeOpenText, FaHistory, FaFingerprint, FaGamepad, FaCalendarDay, FaLock } from 'react-icons/fa';
 
 const MainExperience = () => {
-  const { playSfx, startBgMusic, setSoundMuted } = useSound();
+  const { playSfx, startBgMusic, setMute } = useSound();
   const [isLoading, setIsLoading] = useState(true);
   const [started, setStarted] = useState(false);
   const [activeSector, setActiveSector] = useState('DASHBOARD');
@@ -72,7 +72,7 @@ const MainExperience = () => {
 
   const handleStart = useCallback(() => {
     // Force sound ON when user enters
-    setSoundMuted(false);
+    setMute(false);
     
     setStarted(true);
     
@@ -80,9 +80,12 @@ const MainExperience = () => {
     playSfx(SoundType.SUCCESS);
     playSfx(SoundType.ENTRANCE);
     
+    // Trigger visual burst
+    triggerLoveBurst();
+    
     // Start background music
     startBgMusic();
-  }, [setSoundMuted, setStarted, startBgMusic, playSfx]);
+  }, [setMute, setStarted, startBgMusic, playSfx]);
 
   const triggerLoveBurst = () => {
     setHeartBurst(true);

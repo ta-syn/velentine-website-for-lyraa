@@ -256,7 +256,10 @@ const FutureVision: React.FC = () => {
 
           <form onSubmit={handleAddTask} className="mb-10 space-y-4">
             <div className="flex flex-col md:flex-row gap-4">
+              <label htmlFor="new-dream" className="sr-only">New Dream</label>
               <input
+                id="new-dream"
+                name="newDream"
                 type="text"
                 value={newTask}
                 onChange={(e) => setNewTask(e.target.value)}
@@ -269,10 +272,12 @@ const FutureVision: React.FC = () => {
             </div>
             
             <div className="flex items-center gap-4">
-              <span className="font-orbitron text-sm uppercase text-gray-400 tracking-widest">
+              <label htmlFor="category-select" className="font-orbitron text-sm uppercase text-gray-400 tracking-widest">
                 Select Section:
-              </span>
+              </label>
               <select
+                id="category-select"
+                name="category"
                 value={selectedCategory}
                 onChange={(e) => {
                   const category = e.target.value as Category;
