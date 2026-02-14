@@ -1,0 +1,7 @@
+{
+  "name": "For Lyra ❤️ From Yuki",
+  "description": "A cyberpunk-themed digital love letter and interactive experience created by Yuki for Lyra, featuring neon aesthetics, glitch effects, and immersive soundscapes.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

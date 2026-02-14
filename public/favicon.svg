@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF0080;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B026FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00F0FF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Heart shape -->
+  <path d="M50,85 C50,85 20,60 20,40 C20,30 25,20 35,20 C42,20 47,25 50,30 C53,25 58,20 65,20 C75,20 80,30 80,40 C80,60 50,85 50,85 Z" 
+        fill="url(#heartGradient)" 
+        filter="url(#glow)"
+        stroke="#FF0080" 
+        stroke-width="1.5"/>
+  
+  <!-- Cyberpunk accent lines -->
+  <line x1="15" y1="50" x2="25" y2="50" stroke="#00F0FF" stroke-width="2" opacity="0.8"/>
+  <line x1="75" y1="50" x2="85" y2="50" stroke="#00F0FF" stroke-width="2" opacity="0.8"/>
+  <circle cx="50" cy="35" r="2" fill="#00F0FF" opacity="0.9"/>
+</svg>
