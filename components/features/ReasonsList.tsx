@@ -11,15 +11,18 @@ import { useSound } from '../../contexts/SoundContext';
 import { SoundType } from '../../types';
 
 const INITIAL_REASONS = [
-  "Your smile makes every pixel of this world brighter.",
-  "The way you look at me when you think I'm not looking.",
-  "Your laugh is my favorite soundtrack.",
-  "How you always know exactly what to say to calm my digital storms.",
-  "Your unwavering kindness to every soul you meet.",
-  "The way you nerd out about the things you love.",
-  "How you make me want to be the best version of myself.",
-  "Your beautiful eyes that hold entire universes.",
-  "The way you hold my hand like you're never letting go.",
+  "Because you make my heart beat faster than my CPU on a render task.",
+  "The way you giggle when you're happy (it's my favorite sound).",
+  "How you always support my dreams, no matter how crazy they are.",
+  "Your kindness is a rare algorithm in a chaotic world.",
+  "Because even in silence, I feel connected to you.",
+  "The way you look at the world with such wonder.",
+  "Because you are my player two in every game of life.",
+  "Your texts are the best notification I could ever get.",
+  "How you make 4000 miles feel like 4 inches.",
+  "Because loving you is the easiest thing I've ever done.",
+  "You are the CSS to my HTML—you make everything beautiful.",
+  "Because simply existing in the same timeline as you is a blessing."
 ];
 
 const ReasonsList: React.FC = () => {

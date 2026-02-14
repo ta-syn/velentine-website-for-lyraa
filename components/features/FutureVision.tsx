@@ -25,10 +25,12 @@ interface BucketItem {
 }
 
 const initialBucket: BucketItem[] = [
-  { id: '1', text: 'Visit Japan together during cherry blossom season', completed: false, createdAt: '2026-02-14T03:00:00Z', category: 'travel' },
-  { id: '2', text: 'Build our own custom keyboard together', completed: false, createdAt: '2026-02-14T03:02:00Z', category: 'tech' },
-  { id: '3', text: 'Have a 24-hour movie marathon', completed: false, createdAt: '2026-02-14T03:05:00Z', category: 'life' },
-  { id: '4', text: 'Cook a 5-course meal from scratch', completed: false, createdAt: '2026-02-14T03:00:00Z', category: 'life' },
+  { id: '1', text: 'Meet for the first time at the airport', completed: false, createdAt: '2026-02-14T03:00:00Z', category: 'travel' },
+  { id: '2', text: 'Build a custom PC setup together', completed: false, createdAt: '2026-02-14T03:02:00Z', category: 'tech' },
+  { id: '3', text: 'Watch the sunset from the same beach', completed: false, createdAt: '2026-02-14T03:05:00Z', category: 'adventure' },
+  { id: '4', text: 'Cook our favorite meal in our own kitchen', completed: false, createdAt: '2026-02-14T03:00:00Z', category: 'life' },
+  { id: '5', text: 'Travel to Japan for Cherry Blossom season', completed: false, createdAt: '2026-02-14T03:00:00Z', category: 'travel' },
+  { id: '6', text: 'Win a duo rank match sitting side-by-side', completed: false, createdAt: '2026-02-14T03:00:00Z', category: 'tech' },
 ];
 
 const CATEGORIES: { id: Category; label: string; icon: React.ReactNode; color: string }[] = [

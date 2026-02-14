@@ -18,9 +18,27 @@ interface Letter {
 }
 
 const initialLetters: Letter[] = [
-  { id: '1', date: '2025-12-25', title: 'Why I Love You', content: 'Dearest Lyraa,\n\nI love you because of the way your mind works, finding beauty in the smallest things. I love you because you make me feel like a hero even when I\'m just being myself. Most of all, I love you because you are my home in this vast, chaotic digital universe.', sealed: false },
-  { id: '2', date: '2026-01-01', title: 'My Favorite Memories', content: 'Lyraa,\n\nThinking back to our first conversations in MLBB Global Chat. The way we connected across the distance... that connection is my favorite feeling. Every moment we share is a line of code in the masterpiece of our long-distance love story.', sealed: false },
-  { id: '3', date: '2026-02-14', title: 'Our Future', content: 'Happy Valentine\'s Day, my love.\n\nI see us bridging the distance, still holding each other close despite the miles. I promise to be your shield, your comfort, and your constant through every challenge our long-distance journey brings.', sealed: false },
+  { 
+    id: '1', 
+    date: '2025-12-25', 
+    title: 'The Spark', 
+    content: 'Dearest Lyra,\n\nDo you remember how it all started? That first notification, that first hello. I didn\'t know it then, but that simple digital signal was the beginning of my favorite story.\n\nIn this vast ocean of code and noise, finding you felt like finding a diamond in the rough. You became my clarity, my focus, and my joy. Thank you for walking into my life.', 
+    sealed: false 
+  },
+  { 
+    id: '2', 
+    date: '2026-01-01', 
+    title: 'Across the Distance', 
+    content: 'My Love,\n\nThey say long distance is hard, and they are right. I hate that I can\'t hold your hand when you\'re sad or hug you when you\'re happy.\n\nBut then I see your name pop up on my screen, and suddenly, the miles disappear. We are building something stronger than physical presence. We are connected by hearts, by minds, and by a love that defies geography.', 
+    sealed: false 
+  },
+  { 
+    id: '3', 
+    date: '2026-02-14', 
+    title: 'My Valentine Promise', 
+    content: 'Happy Valentine\'s Day, Lyra.\n\nHere is my promise to you: I will be your debugger when life gets glitchy. I will be your firewall against the bad days. I will be your constant update, always trying to be better for you.\n\nNo matter how far apart we are, you are always right here—in my heart, in my thoughts, in my code. I love you, now and forever.\n\nYours,\nYuki', 
+    sealed: false 
+  },
 ];
 
 const LettersArchive: React.FC = () => {
